@@ -1,0 +1,15 @@
+.card-radio-wrapper {
+    width: 45%;
+    margin-right: 5px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-radio-description {
+    color: #00000080;
+}
+
+.ant-radio-wrapper-checked.card-radio-wrapper {
+    border: 1px solid #48B5FE;
+}
