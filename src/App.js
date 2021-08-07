@@ -76,8 +76,6 @@ function App() {
     ],
   }
 
-  console.log(form);
-
   return (
     <Row>
       <Col xs={24} sm={12} lg={10}>
