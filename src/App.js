@@ -61,7 +61,7 @@ function App() {
         widget: 'radio-group',
         initialValue: '#E59100',
         buttonGroup: true,
-        children: ['#39B0FF', '#04B58B', '#3E9C4B', '#B6BC00', '#E59100', '#E55C00', '#EE1F50'].map(key => <ColorRadio color={key} />),
+        children: ['#39B0FF', '#04B58B', '#3E9C4B', '#B6BC00', '#E59100', '#E55C00', '#EE1F50', 'custom'].map(key => <ColorRadio color={key} />),
       },
       {
         key: 'privacy',
@@ -77,6 +77,7 @@ function App() {
     ],
   }
 
+  console.log(form.getFieldValue('color'))
   return (
     <Row>
       <Col xs={24} md={12}>

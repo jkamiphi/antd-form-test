@@ -34,3 +34,9 @@
     width: 31px;
     border-radius: 50%;
 }
+
+.color-picker-wrapper {
+    position: absolute;
+    top: -174.5px;
+    left: -110px;
+}
