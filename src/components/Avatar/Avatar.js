@@ -23,9 +23,9 @@ export const Avatar = (props) => {
 
 
   return (
-    <Row gutter={10}>
-      <Col span={2}>
-        <Image size={32} src={state.imageUrl} icon={<UserOutlined />}/>
+    <Row gutter={10} align='middle'>
+      <Col span={4}>
+        <Image size={67} src={state.imageUrl} icon={<UserOutlined />}/>
       </Col>
       <Col span={8}>        
         <Upload 

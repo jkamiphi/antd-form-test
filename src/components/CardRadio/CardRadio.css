@@ -1,9 +1,9 @@
 .card-radio-wrapper {
-    width: 45%;
-    margin-right: 5px;
     border: 1px solid #e4e4e4;
     border-radius: 10px;
     padding: 10px;
+    flex: 1 1 0;
+
 }
 
 .card-radio-description {
@@ -12,4 +12,8 @@
 
 .ant-radio-wrapper-checked.card-radio-wrapper {
     border: 1px solid #48B5FE;
+}
+
+.ant-radio-wrapper.card-radio-wrapper:last-child {
+    margin-right: 0;
 }

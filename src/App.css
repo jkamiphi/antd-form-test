@@ -1,5 +1,7 @@
 .form-block {
-  padding: 10px;
+  max-width: 613px;
+  margin-top: 42px;
+  margin-left: 110px;
 }
 
 .view-mode  .ant-form-item-extra {
@@ -16,13 +18,25 @@
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .view-mode {
     display: none;
+  }
+
+  .form-block {
+    margin-left: 42px;
   }
 }
 
 p {
   margin: 0;
   padding: 0;
+}
+
+.ant-input-suffix {
+  color: #00000080;
+}
+
+.ant-input, .ant-input-affix-wrapper {
+  border-radius: 5px;
 }

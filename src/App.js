@@ -29,7 +29,6 @@ function App() {
       { 
         key: 'logo', 
         label: 'Logo del espacio', 
-
         forwardRef: true,
         widget: Avatar,
         extra: <Info value="Este logo identificará tu espacio entre el resto.<br/> Preferiblemente sube una imagen .png igual o superior a 65px a 72ppp con fondo transparente." />, 
@@ -43,6 +42,7 @@ function App() {
         key: 'url', 
         label: 'URL del espacio (dirección web)', 
         placeholder: 'Ep: mi.dominio', 
+        widgetProps: {suffix: '.dofleini.com'},
         extra: <Info value="Puedes cambiar la URL de tu espacio (dirección web) en cualquier momento, pero por cortesía hacia tus compañeros de trabajo y otros usuarios de Plankton, porfavor no lo hagas muy seguido :)<br/><br/> Nota: Si cambias la URL de tu espacio, Plankton automáticamente redireccionará desde la antigua dirección hacia la nueva. En cualquier caso, deberías asegurarte que tus compañeros sepan acerca del cambio porque la dirección anterior pasará a estar libre y puede ser usada por otro espacio en el futuro."/>,
       },
 
@@ -67,6 +67,7 @@ function App() {
         key: 'privacy',
         label: 'Privacidad del espacio',
         initialValue: 'Privado',
+        widgetProps: { style: { display: 'inline-flex' } },
         widget: 'radio-group',
         children: [
           ['Privado', 'El contenido será visible sólo para tí y los miembros de tu Organización.'], 
@@ -78,9 +79,9 @@ function App() {
 
   return (
     <Row>
-      <Col xs={24} sm={12} lg={10}>
+      <Col xs={24} md={12}>
         <div className="form-block">
-          <Form form={form} layout="vertical" onValuesChange={forceUpdate} >
+          <Form form={form} layout="vertical" onValuesChange={forceUpdate} size="large">
             <FormBuilder meta={meta} form={form}  />
             <Form.Item className="form-footer" wrapperCol={{ span: 24}}>
               <Button htmlType="submit" type="primary">
@@ -98,7 +99,7 @@ function App() {
           </Form>
         </div>
     </Col>
-      <Col sm={12} lg={14}>
+      <Col md={12}>
         <div className="view-mode form-block">
           <h2>Resumen</h2>
           <FormBuilder meta={meta} viewMode onValuesChange={forceUpdate} form={form} />
