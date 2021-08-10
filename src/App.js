@@ -4,7 +4,7 @@ import { Row, Col, Form, Button } from 'antd'
 import FormBuilder from 'antd-form-builder'
 
 import './App.css';
-import { CardRadio, ColorRadio, Info, Avatar } from './components';
+import { CardRadio, ColorRadio, Info, Avatar, Preview } from './components';
 
 function App() {
 
@@ -77,7 +77,6 @@ function App() {
     ],
   }
 
-  console.log(form.getFieldValue('color'))
   return (
     <Row>
       <Col xs={24} md={12}>
@@ -100,11 +99,8 @@ function App() {
           </Form>
         </div>
     </Col>
-      <Col md={12}>
-        <div className="view-mode form-block">
-          <h2>Resumen</h2>
-          <FormBuilder meta={meta} viewMode onValuesChange={forceUpdate} form={form} />
-        </div>
+      <Col md={12} className="view-mode">
+        <Preview url={form.getFieldValue('url')} color={form.getFieldValue('color')} />
       </Col>
     </Row>
   );
