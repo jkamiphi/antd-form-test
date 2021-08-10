@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/antd-form-test/static/css/main.e77cfacb.chunk.css",
-    "main.js": "/antd-form-test/static/js/main.619e939d.chunk.js",
-    "main.js.map": "/antd-form-test/static/js/main.619e939d.chunk.js.map",
+    "main.css": "/antd-form-test/static/css/main.b0906e41.chunk.css",
+    "main.js": "/antd-form-test/static/js/main.9eeb8fe8.chunk.js",
+    "main.js.map": "/antd-form-test/static/js/main.9eeb8fe8.chunk.js.map",
     "runtime-main.js": "/antd-form-test/static/js/runtime-main.22f09d57.js",
     "runtime-main.js.map": "/antd-form-test/static/js/runtime-main.22f09d57.js.map",
     "static/css/2.3804ad1f.chunk.css": "/antd-form-test/static/css/2.3804ad1f.chunk.css",
-    "static/js/2.685f8779.chunk.js": "/antd-form-test/static/js/2.685f8779.chunk.js",
-    "static/js/2.685f8779.chunk.js.map": "/antd-form-test/static/js/2.685f8779.chunk.js.map",
+    "static/js/2.1a1de7a3.chunk.js": "/antd-form-test/static/js/2.1a1de7a3.chunk.js",
+    "static/js/2.1a1de7a3.chunk.js.map": "/antd-form-test/static/js/2.1a1de7a3.chunk.js.map",
     "index.html": "/antd-form-test/index.html",
     "static/css/2.3804ad1f.chunk.css.map": "/antd-form-test/static/css/2.3804ad1f.chunk.css.map",
-    "static/css/main.e77cfacb.chunk.css.map": "/antd-form-test/static/css/main.e77cfacb.chunk.css.map",
-    "static/js/2.685f8779.chunk.js.LICENSE.txt": "/antd-form-test/static/js/2.685f8779.chunk.js.LICENSE.txt"
+    "static/css/main.b0906e41.chunk.css.map": "/antd-form-test/static/css/main.b0906e41.chunk.css.map",
+    "static/js/2.1a1de7a3.chunk.js.LICENSE.txt": "/antd-form-test/static/js/2.1a1de7a3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.22f09d57.js",
     "static/css/2.3804ad1f.chunk.css",
-    "static/js/2.685f8779.chunk.js",
-    "static/css/main.e77cfacb.chunk.css",
-    "static/js/main.619e939d.chunk.js"
+    "static/js/2.1a1de7a3.chunk.js",
+    "static/css/main.b0906e41.chunk.css",
+    "static/js/main.9eeb8fe8.chunk.js"
   ]
 }
