@@ -24,10 +24,10 @@ export const Avatar = (props) => {
 
   return (
     <Row gutter={10} align='middle'>
-      <Col span={4}>
+      <Col md={4} xs={6}>
         <Image size={67} src={state.imageUrl} icon={<UserOutlined />}/>
       </Col>
-      <Col span={8}>        
+      <Col md={8} xs={18}>        
         <Upload 
           showUploadList={false}
           beforeUpload={beforeUpload}

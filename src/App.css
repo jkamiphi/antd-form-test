@@ -2,6 +2,7 @@
   max-width: 613px;
   margin-top: 42px;
   margin-left: 110px;
+  margin-right: auto;
 }
 
 .view-mode  .ant-form-item-extra {
@@ -24,7 +25,8 @@
   }
 
   .form-block {
-    margin-left: 42px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
