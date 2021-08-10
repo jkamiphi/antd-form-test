@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
+import {FormProvider} from './context'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FormProvider>
+      <App />
+    </FormProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

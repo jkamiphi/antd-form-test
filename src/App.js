@@ -5,10 +5,10 @@ import FormBuilder from 'antd-form-builder'
 
 import './App.css';
 import { CardRadio, ColorRadio, Info, Avatar, Preview } from './components';
+import { useForm } from './context';
 
 function App() {
-
-  const [form] = Form.useForm()
+  const form = useForm();
   const forceUpdate = FormBuilder.useForceUpdate();
 
   const meta = {
@@ -100,7 +100,7 @@ function App() {
         </div>
     </Col>
       <Col md={12} className="view-mode">
-        <Preview url={form.getFieldValue('url')} color={form.getFieldValue('color')} />
+        <Preview />
       </Col>
     </Row>
   );

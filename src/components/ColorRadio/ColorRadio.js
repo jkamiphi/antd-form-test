@@ -22,7 +22,7 @@ export const ColorRadio = ({color}) => {
     })
       
     return (   
-        color == 'custom' 
+        color === 'custom' 
             ?
             <Radio.Button value={state.color.hex} className="color-radio"  style={{backgroundColor: state.color.hex}} onClick={toggleVisible}> 
                 <div className='circle' style={{backgroundColor: state.color.hex}} />
