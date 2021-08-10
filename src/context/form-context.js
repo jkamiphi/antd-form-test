@@ -1,12 +1,16 @@
 import { Form } from 'antd';
 import React from 'react';
 
+import FormBuilder from 'antd-form-builder';
+
 const FormContext = React.createContext();
 
 export const FormProvider = props => {
-  const [form] = Form.useForm();
+  let [form] = Form.useForm();
 
-  return <FormContext.Provider value={form} {...props} />
+  const forceUpdate = FormBuilder.useForceUpdate();
+
+  return <FormContext.Provider value={{form, forceUpdate}} {...props} />
 }
 
 export const useForm = () => {

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useForm } from '../../context';
 import './Preview.css';
 
 export const Preview = () => {
-    const form = useForm();
+    const {form} = useForm();
 
     const color = form.getFieldValue('color');
     const url = form.getFieldValue('url');
